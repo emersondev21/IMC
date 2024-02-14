@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>IMC | Calculadora </title>
+</head>
+<body>
+  <main class="main">
+    <div class="img-container"></div>
+    <div class="form">
+
+      <label for="height">Altura (cm)</label>
+      <input type="number" name="height" id="inpt_height">
+
+
+      <label for="weight">Peso (Kg)</label>
+      <input type="number" name="weight" id="inpt_weight">
+
+      <div class="result" id="result">
+        <p id="imc"></p>
+        <p class="situation" id="situation"></p>
+      </div>
+      <button class="btn_Calc" id="btn_Calc" onclick="calcIMC()">
+        Calcular
+      </button>
+    </div>
+  </main>
+</body>
+<script src="assets/script/scipt.js"></script>
+</html>
+
+
+
+<!--     
+    IMC <18,5kg/m2: baixo peso
+
+    IMC >18,5 até 24,9kg/m2: peso adequado
+
+    IMC ≥25 até 29,9kg/m2: sobrepeso
+    
+    IMC de 30,0- 34,9kg/m2: obesidade grau I
+
+    IMC de 35,0- 39,9kg/m2: obesidade grau II
+
+    IMC ≥ 40,0kg/m2: obesidade grau III
