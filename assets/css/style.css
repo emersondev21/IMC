@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+:root {
+  /* CSS HEX */
+--cobalt-blue: #1446a0ff;
+--blue-munsell: #2c8c99ff;
+--turquoise: #42d9c8ff;
+--green: #4cd137;
+--green2: #44bd32;
+--onyx: #3c3c3bff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cobalt-blue);
+  font-family: "Lato", sans-serif;
+}
+
+.main {
+  height: 70%;
+  width: 800px;
+  display: flex;
+  background-color: var(--onyx);
+  border-radius: 15px;
+}
+
+.img-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img { 
+  width: 80%;
+  align-self: center;
+}
+
+.form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+label {
+  color: white;
+  margin: 20px 20px 5px 0;
+}
+
+input {
+  border: none;
+  height: 50px;
+  border-radius: 15px;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 15px;
+}
+
+.result {
+  margin: 20px 0;
+  width: 100%;
+  height: 4em;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#imc {
+  font-size: 25px;
+  color: #44bd32;
+}
+
+#situation {
+  color: white;
+}
+
+button {
+  width: 40%;
+  height: 40px;
+  align-self: center;
+  background-color: var(--green2);
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--green);
+}
