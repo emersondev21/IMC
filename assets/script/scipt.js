@@ -13,7 +13,7 @@ function calcIMC(params) {
     var resultadoIMC = document.getElementById("imc");
     var resultadoSituation = document.getElementById("situation");
     resultadoIMC.textContent = (imc.toFixed(2) + " kg/m²");
-    resultadoSituation.textContent = "Peso Ideal";
+    resultadoSituation.textContent = "Abaixo do peso";
     resultadoIMC.style.color = "#FFC312"
   }
 
